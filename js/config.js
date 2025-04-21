@@ -7,9 +7,9 @@ const CONFIG = {
    * Update line 11 and 13 if you prefer using Google.
    */
   commands: [{
-      name: 'Google',
+      name: 'Duckduckgo',
       key: '*',
-      url: 'https://google.com',
+      url: 'https://duckduckgo.com',
       search: '/?q={}'
     },
     {
@@ -191,7 +191,7 @@ const CONFIG = {
       limit: 1
     },
     {
-      name: 'Googles',
+      name: 'DuckDuckGo',
       limit: 4
     },
   ],
