@@ -7,16 +7,16 @@ const CONFIG = {
    * Update line 11 and 13 if you prefer using Google.
    */
   commands: [{
-      name: 'Duckduckgo',
+      name: 'Google',
       key: '*',
-      url: 'https://duckduckgo.com',
+      url: 'https://google.com',
       search: '/?q={}'
     },
     {
       category: 'General',
       name: 'Mail',
       key: 'm',
-      url: 'https://gmail.com',
+      url: 'https://gmail.com/',
       search: '/#search/text={}',
       color: 'linear-gradient(135deg, #dd5145, #dd5145)',
       icon: 'mail',
@@ -30,15 +30,6 @@ const CONFIG = {
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
       icon: 'drive',
-      quickLaunch: false,
-    },
-    {
-      category: 'General',
-      name: 'Telegram',
-      key: 'tg',
-      url: 'https://web.telegram.org',
-      color: '#5682a3',
-      icon: 'telegram',
       quickLaunch: false,
     },
     {
@@ -73,33 +64,13 @@ const CONFIG = {
     },
     {
       category: 'Programming',
-      name: 'StackOverflow',
-      key: 'st',
+      name: 'Chat GPT',
+      key: 'ch',
       url: 'https://stackoverflow.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #53341C, #F48024)',
       icon: 'stackoverflow',
       quickLaunch: true,
-    },
-    {
-      category: 'Programming',
-      name: 'HackerNews',
-      key: 'h',
-      url: 'https://news.ycombinator.com/',
-      search: '/search?stories[query]={}',
-      color: 'linear-gradient(135deg, #FF6600, #DC5901)',
-      icon: 'hackernews',
-      quickLaunch: true,
-    },
-    {
-      category: 'Programming',
-      name: 'MDN',
-      key: 'md',
-      url: 'https://developer.mozilla.org/en-US',
-      search: '/search?q={}',
-      color: '#212121',
-      icon: 'mdn',
-      quickLaunch: false,
     },
     {
       category: 'Programming',
@@ -141,27 +112,6 @@ const CONFIG = {
       icon: 'netflix',
       quickLaunch: false,
     },
-    {
-      category: 'Fun',
-      name: 'Spotify',
-      key: 's',
-      url: 'https://open.spotify.com/',
-      search: '/search/{}',
-      color: '#1dd35e',
-      icon: 'spotify',
-      quickLaunch: false,
-    },
-    {
-      category: 'Fun',
-      name: 'Twitch',
-      key: 'tw',
-      url: 'https://www.twitch.tv',
-      search: '/directory/game/{}',
-      color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'twitch',
-      quickLaunch: false,
-    },
-
 
     {
       category: 'Other',
@@ -241,7 +191,7 @@ const CONFIG = {
       limit: 1
     },
     {
-      name: 'DuckDuckGo',
+      name: 'Googles',
       limit: 4
     },
   ],
@@ -278,7 +228,7 @@ const CONFIG = {
   /**
    * Show keys instead of icons
    */
-  showKeys: false,
+  showKeys: true,
 
   /**
    * The delimiter between a command key and your search query. For example,
@@ -300,7 +250,7 @@ const CONFIG = {
   /**
    * Show a twenty-four-hour clock instead of a twelve-hour clock with AM/PM.
    */
-  twentyFourHourClock: true,
+  twentyFourHourClock: false,
 
   /**
    * File extension for icon images
